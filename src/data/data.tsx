@@ -14,17 +14,15 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+import porfolioImage1 from '../images/portfolio/flowcite_dashboard1.png';
+import porfolioImage2 from '../images/portfolio/toddle.com.au.png';
+import porfolioImage3 from '../images/portfolio/stylesearch.com.png';
+import porfolioImage4 from '../images/portfolio/livefeather.com.png';
+import porfolioImage5 from '../images/portfolio/tylko.com.png';
+import porfolioImage6 from '../images/portfolio/barchart.com.png';
+import porfolioImage7 from '../images/portfolio/cwmead.com.png';
+import porfolioImage8 from '../images/portfolio/irealtyprofessionals.com.png';
+import porfolioImage9 from '../images/portfolio/paimon.moe.png';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -44,8 +42,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Elijah Thomas Resume',
+  description: "This is portfolio for Elijah Thomas",
 };
 
 /**
@@ -69,18 +67,15 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Elijah Thomas.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a Hellerup based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
+        at <strong className="text-stone-100">DICEUS</strong> creating intuitive and user-friendly web applications.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+      In my personal life, I enjoy spending time with friends and family, as well as almost any outdoor activity
       </p>
     </>
   ),
@@ -104,16 +99,14 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `Elijah is a seasoned full stack developer with expertise in both front-end and back-end technologies, including HTML, CSS, JavaScript, React, Node.js, and SQL. He has a proven track record of delivering high-quality projects on time and enjoys collaborating with clients and colleagues to achieve their goals.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
+    {label: 'Location', text: 'Hellerup, DK', Icon: MapIcon},
+    {label: 'Age', text: '30', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Japan', Icon: FlagIcon},
     {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: OfficeBuildingIcon},
+    {label: 'Study', text: 'National Chiao Tung University', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'DICEUS, inc.', Icon: OfficeBuildingIcon},
   ],
 };
 
@@ -129,12 +122,25 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
+        name: 'Chinese',
+        level: 2,
+      },
+    ],
+  },
+  {
+    name: 'Programming languages',
+    skills: [
+      {
+        name: 'JavaScript(ES6) / TypeScript',
+        level: 9,
       },
       {
-        name: 'Spanish',
-        level: 3,
+        name: 'Python',
+        level: 7,
+      },
+      {
+        name: 'PHP',
+        level: 8,
       },
     ],
   },
@@ -142,16 +148,16 @@ export const skills: SkillGroup[] = [
     name: 'Frontend development',
     skills: [
       {
-        name: 'React',
+        name: 'React / Next.js',
         level: 9,
       },
       {
-        name: 'Typescript',
-        level: 7,
+        name: 'Vuejs / Quasar / Nuxt.js',
+        level: 9,
       },
       {
-        name: 'GraphQL',
-        level: 6,
+        name: 'Laravel / Inertia',
+        level: 8,
       },
     ],
   },
@@ -159,16 +165,16 @@ export const skills: SkillGroup[] = [
     name: 'Backend development',
     skills: [
       {
-        name: 'Node.js',
+        name: 'Node.js / Express / Nest.js',
         level: 8,
       },
       {
-        name: 'Rust',
-        level: 5,
+        name: 'Python / Flask / Django',
+        level: 7,
       },
       {
-        name: 'Golang',
-        level: 4,
+        name: 'REST APIs / GraphQL',
+        level: 8,
       },
     ],
   },
@@ -179,14 +185,6 @@ export const skills: SkillGroup[] = [
         name: 'React Native',
         level: 9,
       },
-      {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
-      },
     ],
   },
 ];
@@ -196,70 +194,58 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'All-In-One Solution For Academic Research',
+    description: 'Built with React, Nextjs, Nodejs',
+    url: 'https://flowcite.com',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Toddle',
+    description: 'Built with Wordpress, PHP',
+    url: 'https://www.toddleapp.com/',
     image: porfolioImage2,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Style Search',
+    description: 'Built with React',
+    url: 'https://stylesearch.com/',
     image: porfolioImage3,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'LiveFeather',
+    description: 'Built with React, Express, Stripe, Emotion, Bootstrap',
+    url: 'https://livefeather.com',
     image: porfolioImage4,
   },
   {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Now even more wardrobes to match your needs',
+    description: 'Built with Vue.js, Nuxt.js, Tailwind CSS',
+    url: 'https://tylko.com/',
     image: porfolioImage5,
   },
   {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Institution-Grade Tools',
+    description: 'Built with Laravel, PHP',
+    url: 'https://www.barchart.com/',
     image: porfolioImage6,
   },
   {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'THE TOYOTA HALL OF FAME',
+    description: 'Built with Laravel, PHP, Bootstrap',
+    url: 'https://cwmead.com/halloffame',
     image: porfolioImage7,
   },
   {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Your HomeTown Real Estate Professionals',
+    description: 'Built with React',
+    url: 'https://irealtyprofessionals.com/',
     image: porfolioImage8,
   },
   {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Genshin Impact Companion App',
+    description: 'Built with SvelteKit, Nodejs',
+    url: 'https://paimon.moe/',
     image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage11,
   },
 ];
 
@@ -268,39 +254,41 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'Sep 2015',
+    location: 'National Chiao Tung University',
+    title: 'Bachelor of Computer Science',
+    content: <p>Useful skill that I learned was collaboration. Throughout my time at school, I had the opportunity to work with different people on group projects, presentations, and other activities. This helped me develop communication skills, empathy, and the ability to work effectively with others towards a common goal.</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'July 2021 - Present',
+    location: 'DICEUS Ukraine Software Development Company',
+    title: 'Full Stack Engineer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        I have experience reducing latency, increasing test coverage, collaborating with teams, employing agile methodology, building microservices, mentoring junior developers, reviewing code, and maintaining backend code using various technologies.
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'October 2018 - June 2021',
+    location: 'Luminary Australia Software Development Company',
+    title: 'Full Stack Developer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        I worked in building PWAs with Vue, JavaScript, and Laravel, implementing SEO for React e-commerce sites, deploying web applications with Docker, Kubernetes, and AWS, and developing live video co-shopping and work studio platforms with various technologies.
+      </p>
+    ),
+  },
+  {
+    date: 'March 2016 - September 2018',
+    location: 'MYOB Australia Software Development Company',
+    title: 'Web Developer',
+    content: (
+      <p>
+        I have experience building RESTful APIs for healthcare data reporting, implementing plugin architecture for customer software, delivering responsive websites with faster load times, and improving UX/UI design to increase conversion rates.
       </p>
     ),
   },
@@ -313,18 +301,18 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
+      name: 'Paul',
+      text: 'Working with Elijah has been a game-changer for my business. Their expertise in front-end and back-end development helped bring my vision to life. He was able to seamlessly integrate complex features into my website, and their attention to detail and responsiveness to my feedback made the collaboration a breeze. I highly recommend Elijah for any project that requires top-notch development skills.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
+      name: 'Kandor',
+      text: "I couldn't be happier with the work that Elijah did on my web application. He was able to take my ideas and turn them into a fully functional and user-friendly platform. Their ability to work on both the front-end and back-end made the development process efficient and streamlined. Elijah is an extremely talented developer and I would definitely work with him again in the future",
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
     },
     {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
+      name: 'Eliott',
+      text: "I had the pleasure of working with Elijah on a complex web application and I can say with confidence that he is one of the best developers I have ever worked with. He has an incredible skill set and a deep understanding of both front-end and back-end development.He was also great at collaborating with other members of the team and bringing their own ideas to the table. I would highly recommend Elijah  to anyone looking for a top-notch developer.",
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
     },
   ],
@@ -336,27 +324,22 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'Please feel free to contact me',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'elijahthomas.dev@gmail.com',
+      href: 'mailto:elijahthomas.dev@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
+      text: 'Hellerup, Denmark',
       href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
     },
     {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
-    },
-    {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'meticulousfan',
+      href: 'https://github.com/meticulousfan',
     },
   ],
 };
@@ -365,9 +348,8 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/meticulousfan'},
+  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/20505915/gungho'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/elithomas5515/'},
+  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/ElijahT59051745'},
 ];
